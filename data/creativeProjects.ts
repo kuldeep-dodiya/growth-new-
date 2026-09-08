@@ -5,53 +5,58 @@
 
 export interface CreativeProject {
   id: string;
-  title: string; // [REPLACE: PROJECT NAME]
-  industry: string; // [REPLACE: INDUSTRY]
+  title: string;
+  industry: string;
   type: string; // e.g. "Video Ad", "Static Ad Series", "Campaign"
   description: string;
-  image: string; // Path relative to /public — [REPLACE: IMAGE PATH]
+  image: string; // Thumbnail image path relative to /public
+  video?: string; // Optional MP4 video path — omit for static-only projects
   tags: string[];
 }
 
 export const creativeProjects: CreativeProject[] = [
   {
     id: "creative-01",
-    title: "[REPLACE: CREATIVE PROJECT 01 NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    type: "[REPLACE: CREATIVE TYPE]", // e.g. "Video Ad Campaign"
+    title: "KARMVA — Wear Your Karma",
+    industry: "Fashion & Apparel",
+    type: "Static Ad Campaign",
     description:
-      "[REPLACE: Brief description of this creative project, results achieved, and what made it effective.]",
-    image: "/placeholders/creative-01.jpg", // [REPLACE: ACTUAL IMAGE PATH]
-    tags: ["[TAG 1]", "[TAG 2]", "[TAG 3]"],
+      "A premium static campaign blending Indian philosophy with modern streetwear to build a distinctive brand identity.",
+    image: "/ads/karmva.png",
+    // No video — static image only
+    tags: ["Fashion Marketing", "Streetwear", "Brand Identity"],
   },
   {
     id: "creative-02",
-    title: "[REPLACE: CREATIVE PROJECT 02 NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    type: "[REPLACE: CREATIVE TYPE]",
+    title: "Jewelry That Speaks",
+    industry: "Jewelry & Fashion",
+    type: "Video Ad Campaign",
     description:
-      "[REPLACE: Brief description of this creative project, results achieved, and what made it effective.]",
-    image: "/placeholders/creative-02.jpg", // [REPLACE: ACTUAL IMAGE PATH]
-    tags: ["[TAG 1]", "[TAG 2]", "[TAG 3]"],
+      "A cinematic product video designed to showcase elegance, detail, and the emotional value behind the jewelry.",
+    image: "/ads/jewellery.png",
+    video: "/ads/Jewellery.mp4",
+    tags: ["Jewelry Marketing", "Product Video", "Luxury Branding"],
   },
   {
     id: "creative-03",
-    title: "[REPLACE: CREATIVE PROJECT 03 NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    type: "[REPLACE: CREATIVE TYPE]",
+    title: "Natural Glow, Naturally",
+    industry: "Beauty & Skincare",
+    type: "Video Ad Campaign",
     description:
-      "[REPLACE: Brief description of this creative project, results achieved, and what made it effective.]",
-    image: "/placeholders/creative-03.jpg", // [REPLACE: ACTUAL IMAGE PATH]
-    tags: ["[TAG 1]", "[TAG 2]", "[TAG 3]"],
+      "A product-focused video highlighting natural ingredients, product experience, and the promise of radiant-looking skin.",
+    image: "/ads/soap.png",
+    video: "/ads/soap.mp4",
+    tags: ["Beauty Marketing", "Skincare Advertising", "UGC Ads"],
   },
   {
     id: "creative-04",
-    title: "[REPLACE: CREATIVE PROJECT 04 NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    type: "[REPLACE: CREATIVE TYPE]",
+    title: "Your Next Address",
+    industry: "Real Estate",
+    type: "Video Ad Campaign",
     description:
-      "[REPLACE: Brief description of this creative project, results achieved, and what made it effective.]",
-    image: "/placeholders/creative-04.jpg", // [REPLACE: ACTUAL IMAGE PATH]
-    tags: ["[TAG 1]", "[TAG 2]", "[TAG 3]"],
+      "A cinematic property video designed to showcase the space, lifestyle, and investment appeal of the project.",
+    image: "/ads/real-estate.png",
+    video: "/ads/real-estate.mp4",
+    tags: ["Real Estate Marketing", "Property Video", "Lead Generation"],
   },
 ];

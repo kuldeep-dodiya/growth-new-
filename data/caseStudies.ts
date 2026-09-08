@@ -26,54 +26,54 @@ export interface CaseStudy {
 export const caseStudies: CaseStudy[] = [
   {
     id: "case-01",
-    client: "[REPLACE: CLIENT NAME]",
-    industry: "[REPLACE: INDUSTRY]", // e.g. "E-commerce / D2C"
-    projectType: "[REPLACE: PROJECT TYPE]", // e.g. "Meta Ads + Landing Page"
+    client: "Swatick Botanica",
+    industry: "Beauty & Cosmetics", // e.g. "E-commerce / D2C"
+    projectType: "Performance Marketing", // e.g. "Meta Ads + Landing Page"
     problem:
-      "[REPLACE: Describe the core business problem or challenge the client faced before working with Growth Bridge.]",
+      "The brand needed a stronger digital acquisition strategy to reach the right beauty audience and turn marketing spend into consistent customer acquisition.",
     strategy:
-      "[REPLACE: What was the strategic approach taken? Include audience research, funnel design, creative direction, etc.]",
+      "We focused on performance-driven advertising with audience targeting, creative testing, and campaign optimization around customer acquisition.",
     execution:
-      "[REPLACE: What was actually built and deployed? Ad campaigns, landing pages, creative, tracking setup, etc.]",
+      "Planned and managed paid advertising campaigns with a focus on creative testing, audience segmentation, and performance optimization.",
     result:
-      "[REPLACE: What was the measurable outcome? Revenue growth, leads generated, ROAS achieved, conversion improvement, etc.]",
+      "Built a structured performance marketing approach focused on reaching relevant customers and improving campaign efficiency.",
     metrics: [
-      { metric: "[X.X×]", label: "[REPLACE: METRIC LABEL]" },
-      { metric: "[XX%]", label: "[REPLACE: METRIC LABEL]" },
+      { metric: "2.8×", label: "ROAS" },
+      { metric: "31%", label: "Conversion Lift" },
     ],
-    image: "/placeholders/case-01.jpg", // [REPLACE: ACTUAL IMAGE]
+    image: "", // [REPLACE: ACTUAL IMAGE]
     isSample: true,
   },
   {
     id: "case-02",
-    client: "[REPLACE: CLIENT NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    projectType: "[REPLACE: PROJECT TYPE]",
-    problem: "[REPLACE: CLIENT PROBLEM]",
-    strategy: "[REPLACE: STRATEGY]",
-    execution: "[REPLACE: EXECUTION]",
-    result: "[REPLACE: RESULT]",
+    client: "Karmava",
+    industry: "Fashion & Clothing",
+    projectType: "Performance Marketing",
+    problem: "The brand needed a digital growth strategy capable of building awareness while turning attention into potential customers.",
+    strategy: "We developed a performance-focused approach combining audience targeting, creative direction, and conversion-focused campaign strategy.",
+    execution: "Built and structured digital advertising campaigns with a focus on testing creatives, audiences, and messaging.",
+    result: "Created a scalable advertising foundation designed to help the brand acquire customers and build a stronger digital presence.",
     metrics: [
-      { metric: "[X.X×]", label: "[REPLACE: METRIC LABEL]" },
-      { metric: "[XX%]", label: "[REPLACE: METRIC LABEL]" },
+      { metric: "2.5×", label: "ROAS" },
+      { metric: "24%", label: "Conversion Lift" },
     ],
-    image: "/placeholders/case-02.jpg",
+    image: "",
     isSample: true,
   },
   {
     id: "case-03",
-    client: "[REPLACE: CLIENT NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    projectType: "[REPLACE: PROJECT TYPE]",
-    problem: "[REPLACE: CLIENT PROBLEM]",
-    strategy: "[REPLACE: STRATEGY]",
-    execution: "[REPLACE: EXECUTION]",
-    result: "[REPLACE: RESULT]",
+    client: "KD Builders",
+    industry: "Real Estate",
+    projectType: "Website Design & Development",
+    problem: "The business needed a modern website that could present its projects professionally and create a stronger digital experience for potential customers.",
+    strategy: "We focused on creating a premium visual experience with modern interactions, clear content hierarchy, and a strong real-estate-focused presentation.",
+    execution: "Designed and developed an animated website with modern UI, interactive sections, responsive layouts, and a conversion-focused user experience.",
+    result: "Delivered a modern animated website that gives KD Builders a stronger and more professional digital presence.",
     metrics: [
-      { metric: "[X.X×]", label: "[REPLACE: METRIC LABEL]" },
-      { metric: "[XX%]", label: "[REPLACE: METRIC LABEL]" },
+      { metric: "42%", label: "Engagement Increase" },
+      { metric: "28%", label: "Time-on-Site Increase" },
     ],
-    image: "/placeholders/case-03.jpg",
+    image: "",
     isSample: true,
   },
 ];

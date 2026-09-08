@@ -23,10 +23,10 @@ export const services: Service[] = [
     id: "performance-marketing",
     icon: "TrendingUp",
     pillar: "Performance Marketing",
-    headline: "Ads That Generate Revenue, Not Just Clicks.",
+    headline: "Ads That Acquire Customers and Scale Revenue.",
     description:
-      "We build and manage full-funnel paid media campaigns engineered for measurable returns — across Meta, Google, and beyond.",
-    outcome: "More qualified leads. Better ROAS. Predictable growth.",
+      "We build and manage full-funnel paid media campaigns for D2C and e-commerce brands — engineered for profitable customer acquisition and measurable returns.",
+    outcome: "Lower CAC. Better ROAS. Predictable revenue growth.",
     features: [
       { label: "Meta Ads (Facebook & Instagram)" },
       { label: "Google Ads (Search, Display, YouTube)" },
@@ -44,7 +44,7 @@ export const services: Service[] = [
     pillar: "Websites & Conversion",
     headline: "Your Website Should Be Your Best Salesperson.",
     description:
-      "We design and build conversion-focused websites, landing pages, and sales funnels that turn visitors into customers — backed by data.",
+      "We design and build conversion-focused websites for D2C, e-commerce, healthcare, and real estate businesses — turning visitors into customers, backed by data.",
     outcome: "Higher conversion rates. Lower CPL. Websites that work.",
     features: [
       { label: "Business Websites" },

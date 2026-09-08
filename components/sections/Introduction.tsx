@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import AnimatedSection from '@/components/AnimatedSection';
 import { ArrowRight } from 'lucide-react';
+import { brand } from '@/data/brand';
 
 const flowSteps = [
   { label: 'Traffic', color: 'from-violet-primary to-violet-neon' },
@@ -55,7 +56,9 @@ export default function Introduction() {
 
             <AnimatedSection delay={0.3}>
               <a
-                href="#contact"
+                href={brand.navCtaHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-violet-neon font-medium hover:gap-4 transition-all duration-300"
               >
                 Book a Strategy Call <ArrowRight className="w-4 h-4" />

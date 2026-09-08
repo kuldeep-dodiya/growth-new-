@@ -5,29 +5,30 @@
 // ============================================================
 
 export const founder = {
-  name: "[REPLACE: FOUNDER NAME]", // e.g. "Arjun Sharma"
+  name: "Kuldeep H. Dodiya", // e.g. "Arjun Sharma"
   role: "Founder & CEO",
-  photo: "/placeholders/founder.jpg", // [REPLACE: ACTUAL PHOTO PATH] — use a professional headshot
-  bio: "[REPLACE: FOUNDER BIO]",
+  photo: "/image/founder.png", // [REPLACE: ACTUAL PHOTO PATH] — use a professional headshot
+  bio: "I believe great businesses deserve marketing that actually moves the business forward. That belief led me to build Growth Bridge — a growth agency focused on performance marketing and high-converting websites. We help D2C brands scale through paid advertising and build digital experiences that turn visitors into customers.",
   // Example bio structure (write your own, do not use this):
   // "I started Growth Bridge because I saw too many great businesses throwing money at ads
   // without a real strategy behind them. After X years working in [background], I built
   // a system that connects paid media, conversion design, and data — so growth is
   // measurable, predictable, and scalable."
-  shortBio:
-    "[REPLACE: ONE LINE FOUNDER DESCRIPTION]", // e.g. "Ex-[Company], 5+ years in performance marketing"
-
+  shortBio:[
+    "Founder & CEO of Growth Bridge",
+    "Focused on performance marketing, conversion strategy & digital growth",
+    "Building growth-focused digital experiences for D2C, healthcare & real estate businesses", // e.g. "Ex-[Company], 5+ years in performance marketing"
+  ],
   social: {
-    linkedin: "[REPLACE: LINKEDIN URL]",
-    instagram: "[REPLACE: INSTAGRAM URL]",
-    twitter: "[REPLACE: TWITTER URL]",
-    email: "[REPLACE: EMAIL ADDRESS]",
+    linkedin: "https://www.linkedin.com/in/kuldeepdodiya/",
+    instagram: "https://www.instagram.com/_kuldeep_dodiya_/",
+    email: "growthbriidge@gmail.com",
   },
 
   // Credentials / achievements — ONLY add real ones
   credentials: [
-    "[REPLACE: CREDENTIAL OR ACHIEVEMENT]",
-    "[REPLACE: CREDENTIAL OR ACHIEVEMENT]",
-    "[REPLACE: CREDENTIAL OR ACHIEVEMENT]",
+    "Founder & CEO — Growth Bridge",
+    "Performance Marketing & Digital Growth",
+    "Website Design & Development",
   ],
 };

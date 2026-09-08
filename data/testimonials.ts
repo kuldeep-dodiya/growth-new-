@@ -18,21 +18,21 @@ export const testimonials: Testimonial[] = [
   {
     id: "testimonial-01",
     quote:
-      "[REPLACE: What the client said about working with Growth Bridge. Focus on business outcomes, transformation, and trust.]",
-    name: "[REPLACE: CLIENT NAME]",
-    role: "[REPLACE: ROLE]", // e.g. "Founder & CEO"
-    company: "[REPLACE: COMPANY NAME]",
+      "Growth Bridge understood what we wanted as a growing beauty brand and brought a much more structured approach to our digital marketing. The communication was clear, and the focus was always on improving performance.",
+    name: "Swatick Botanica Team",
+    role: "Brand Team", // e.g. "Founder & CEO"
+    company: "Swatick Botanica",
     photo: "/placeholders/client-01.jpg", // [REPLACE: ACTUAL PHOTO]
-    logo: "/placeholders/logo-01.png", // [REPLACE: ACTUAL LOGO]
+    logo: "/logo/swastic.png", // [REPLACE: ACTUAL LOGO]
     isSample: true,
   },
   {
     id: "testimonial-02",
     quote:
-      "[REPLACE: Testimonial from another client highlighting a specific result or experience.]",
-    name: "[REPLACE: CLIENT NAME]",
-    role: "[REPLACE: ROLE]",
-    company: "[REPLACE: COMPANY NAME]",
+      "Working with Growth Bridge helped us bring our brand vision to life digitally. From the overall strategy to the creative direction, the process was focused on building something that actually represented the brand.",
+    name: "Karmava Team",
+    role: "Brand Team",
+    company: "Karmava",
     photo: "/placeholders/client-02.jpg",
     logo: "/placeholders/logo-02.png",
     isSample: true,
@@ -40,10 +40,10 @@ export const testimonials: Testimonial[] = [
   {
     id: "testimonial-03",
     quote:
-      "[REPLACE: Testimonial from a third client. Ideally from a different industry to show breadth.]",
-    name: "[REPLACE: CLIENT NAME]",
-    role: "[REPLACE: ROLE]",
-    company: "[REPLACE: COMPANY NAME]",
+      "Growth Bridge created a modern website that gave our brand a much stronger digital presence. The attention to design, animations, and overall user experience made the website feel professional and distinctive.",
+    name: "KD Builders Team",
+    role: "Management Team",
+    company: "KD Builders",
     photo: "/placeholders/client-03.jpg",
     logo: "/placeholders/logo-03.png",
     isSample: true,
@@ -52,12 +52,11 @@ export const testimonials: Testimonial[] = [
 
 // Client logos for the trust strip
 export const clientLogos = [
-  { id: "logo-01", name: "[REPLACE: CLIENT NAME]", logo: "/placeholders/logo-01.png", isSample: true },
-  { id: "logo-02", name: "[REPLACE: CLIENT NAME]", logo: "/placeholders/logo-02.png", isSample: true },
-  { id: "logo-03", name: "[REPLACE: CLIENT NAME]", logo: "/placeholders/logo-03.png", isSample: true },
-  { id: "logo-04", name: "[REPLACE: CLIENT NAME]", logo: "/placeholders/logo-04.png", isSample: true },
-  { id: "logo-05", name: "[REPLACE: CLIENT NAME]", logo: "/placeholders/logo-05.png", isSample: true },
-  { id: "logo-06", name: "[REPLACE: CLIENT NAME]", logo: "/placeholders/logo-06.png", isSample: true },
-  { id: "logo-07", name: "[REPLACE: CLIENT NAME]", logo: "/placeholders/logo-07.png", isSample: true },
-  { id: "logo-08", name: "[REPLACE: CLIENT NAME]", logo: "/placeholders/logo-08.png", isSample: true },
+  { id: "logo-01", name: "zayka", logo: "/logo/zayka.jpeg", isSample: false },
+  { id: "logo-02", name: "alfawear", logo: "/logo/alfawear.png", isSample: false },
+  { id: "logo-03", name: "dts", logo: "/logo/dts.png", isSample: false },
+  { id: "logo-04", name: "karmva", logo: "/logo/karmva.png", isSample: false },
+  { id: "logo-05", name: "kd", logo: "/logo/kd.png", isSample: false },
+  { id: "logo-06", name: "primeaxis", logo: "/logo/primeaxis.png", isSample: false },
+  { id: "logo-07", name: "swastic", logo: "/logo/swastic.png", isSample: false },
 ];

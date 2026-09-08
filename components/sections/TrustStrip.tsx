@@ -36,23 +36,9 @@ export default function TrustStrip() {
             >
               <Counter value={metric.value} />
               <span className="text-text-secondary text-sm mt-1">{metric.label}</span>
-              {/* SAMPLE DATA indicator visible only in dev */}
-              <span className="absolute top-2 right-2 text-[9px] text-violet-primary/40 font-mono hidden dev-only">
-                SAMPLE
-              </span>
             </motion.div>
           ))}
         </div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="text-center text-text-secondary/50 text-xs mt-4 tracking-wide"
-        >
-          * Metrics are placeholder values — replace with real data in{' '}
-          <code className="text-violet-primary/60">data/metrics.ts</code>
-        </motion.p>
       </div>
     </section>
   );

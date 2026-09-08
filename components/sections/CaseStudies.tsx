@@ -67,8 +67,8 @@ export default function CaseStudies() {
                 <div className="flex items-center gap-6">
                   {/* Key metrics preview */}
                   <div className="hidden md:flex items-center gap-4">
-                    {cs.metrics.map((m) => (
-                      <div key={m.label} className="text-center">
+                    {cs.metrics.map((m, mi) => (
+                      <div key={`${cs.id}-metric-${mi}`} className="text-center">
                         <p className="text-violet-neon font-bold text-lg">{m.metric}</p>
                         <p className="text-text-secondary text-xs">{m.label}</p>
                       </div>
@@ -117,12 +117,6 @@ export default function CaseStudies() {
         </div>
 
         {/* Note */}
-        <AnimatedSection delay={0.3}>
-          <p className="text-center text-text-secondary/40 text-xs mt-6">
-            * All case study content is placeholder — replace in{' '}
-            <code className="text-violet-primary/60">data/caseStudies.ts</code>
-          </p>
-        </AnimatedSection>
       </div>
     </section>
   );

@@ -5,14 +5,14 @@
 
 export const brand = {
   name: "Growth Bridge",
-  tagline: "[REPLACE: TAGLINE]", // e.g. "From Traffic to Revenue. Engineered."
+  tagline: "Build Better. Convert More. Grow Faster.", // e.g. "From Traffic to Revenue. Engineered."
   subTagline:
-    "Performance marketing and conversion-focused digital experiences built to turn attention into measurable growth.",
+    "Performance marketing for ambitious D2C brands. High-converting websites for D2C, healthcare, and real estate businesses.",
 
   // HERO
-  heroHeadline: "[REPLACE: HERO HEADLINE]", // e.g. "Turn Attention Into Measurable Growth"
+  heroHeadline: "Turn Digital Attention Into Business Growth.", // e.g. "Turn Attention Into Measurable Growth"
   heroSubline:
-    "Performance marketing and conversion-focused digital experiences built to turn attention into measurable growth.",
+    "Performance marketing for ambitious D2C brands. High-converting websites for D2C, healthcare, and real estate businesses.",
   heroCta1: "Book a Strategy Call",
   heroCta2: "View Our Work",
 
@@ -26,23 +26,22 @@ export const brand = {
     { label: "Contact", href: "#contact" },
   ],
   navCta: "Book a Strategy Call",
-  navCtaHref: "#contact",
+  navCtaHref: "https://calendly.com/growthbriidge/30min",
 
   // CONTACT
-  email: "[REPLACE: EMAIL]", // e.g. hello@growthbridge.in
-  phone: "[REPLACE: PHONE]", // e.g. +91 98765 43210
-  location: "[REPLACE: LOCATION]", // e.g. Mumbai, India
+  email: "growthbriidge@gmail.com", // e.g. hello@growthbridge.in
+  phone: "+91 93130 70872", // e.g. +91 98765 43210
+  location: "Gujarat, India", // e.g. Mumbai, India
 
   // SOCIAL
   social: {
-    linkedin: "[REPLACE: LINKEDIN URL]",
-    instagram: "[REPLACE: INSTAGRAM URL]",
-    twitter: "[REPLACE: TWITTER URL]",
-    youtube: "[REPLACE: YOUTUBE URL]",
+    linkedin: "https://www.linkedin.com/company/growth-brridge/posts/?viewAsMember=true",
+    instagram: "https://www.instagram.com/_growth_bridge_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+
   },
 
   // FOOTER
   footerDescription:
-    "Growth Bridge is a performance marketing and conversion design agency helping ambitious brands scale through strategy, creative, and data.",
-  copyrightYear: 2024,
+    "Growth Bridge is a performance marketing and conversion design agency. We help D2C and e-commerce brands grow through performance marketing — and build high-converting websites for D2C, e-commerce, healthcare, and real estate businesses.",
+  copyrightYear: 2025,
 };

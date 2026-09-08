@@ -14,27 +14,27 @@ export interface Metric {
 
 export const metrics: Metric[] = [
   {
-    value: "XX+",
+    value: "250+",
     label: "Leads Generated",
     isSample: true,
   },
   {
-    value: "X.X×",
+    value: "3.2x",
     label: "Average ROAS",
     isSample: true,
   },
   {
-    value: "XX%",
+    value: "28%",
     label: "Conversion Increase",
     isSample: true,
   },
   {
-    value: "₹XXL+",
+    value: "₹25L+",
     label: "Revenue Influenced",
     isSample: true,
   },
   {
-    value: "XX+",
+    value: "35+",
     label: "Projects Delivered",
     isSample: true,
   },
@@ -43,25 +43,25 @@ export const metrics: Metric[] = [
 // Performance section metrics (SAMPLE DATA)
 export const performanceMetrics = [
   {
-    value: "XXX%",
+    value: "35%",
     label: "Traffic Growth",
     description: "Average organic + paid traffic increase across client campaigns",
     isSample: true,
   },
   {
-    value: "XXX%",
+    value: "22%",
     label: "Conversion Rate Lift",
     description: "Average improvement after conversion optimization",
     isSample: true,
   },
   {
-    value: "X.X×",
+    value: "3.2x",
     label: "Return on Ad Spend",
     description: "Average ROAS across performance marketing campaigns",
     isSample: true,
   },
   {
-    value: "XX%",
+    value: "82%",
     label: "Client Retention",
     description: "Percentage of clients who continue partnership after 6 months",
     isSample: true,

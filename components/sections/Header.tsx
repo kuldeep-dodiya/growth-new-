@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
+import MagneticButton from '@/components/MagneticButton';
 import Link from 'next/link';
 import { brand } from '@/data/brand';
 
@@ -28,9 +29,12 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-primary to-violet-neon flex items-center justify-center">
-              <span className="text-white font-bold text-sm">GB</span>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/gb logo/main logo.png"
+              alt="Growth Bridge — Performance Marketing Agency"
+              className="h-8 w-auto object-contain"
+            />
             <span className="text-white font-semibold text-lg tracking-tight">
               Growth<span className="text-violet-neon">Bridge</span>
             </span>
@@ -51,20 +55,23 @@ export default function Header() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Link
-              href={brand.navCtaHref}
-              className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-white bg-gradient-to-r from-violet-primary to-violet-neon hover:shadow-neon transition-all duration-300 hover:scale-105"
-            >
-              {brand.navCta}
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
+            <MagneticButton intensity={0.15}>
+              <a
+                href={brand.navCtaHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-white bg-gradient-to-r from-violet-primary to-violet-neon hover:shadow-neon transition-all duration-300 hover:scale-105"
+              >
+                {brand.navCta}
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </MagneticButton>
           </div>
 
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMobileOpen(true)}
-            className="md:hidden text-white p-2"
-            aria-label="Open menu"
+            className="md:hidden p-2 text-text-secondary hover:text-white"
           >
             <Menu className="w-6 h-6" />
           </button>
@@ -75,35 +82,21 @@ export default function Header() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0, x: '100%' }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: '100%' }}
-            transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="fixed inset-0 z-[100] bg-surface flex flex-col"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="fixed inset-0 z-40 bg-background/95 backdrop-blur-xl flex flex-col pt-24"
           >
-            <div className="flex items-center justify-between p-6 border-b border-violet-dark/50">
-              <Link
-                href="/"
-                className="flex items-center gap-2"
-                onClick={() => setMobileOpen(false)}
-              >
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-primary to-violet-neon flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">GB</span>
-                </div>
-                <span className="text-white font-semibold text-lg tracking-tight">
-                  Growth<span className="text-violet-neon">Bridge</span>
-                </span>
-              </Link>
+            <div className="absolute top-6 right-6">
               <button
                 onClick={() => setMobileOpen(false)}
-                className="text-white p-2"
-                aria-label="Close menu"
+                className="p-2 text-text-secondary hover:text-white"
               >
-                <X className="w-6 h-6" />
+                <X className="w-8 h-8" />
               </button>
             </div>
 
-            <nav className="flex flex-col flex-1 p-6 gap-2">
+            <nav className="flex-1 px-6 overflow-y-auto">
               {brand.navLinks.map((link, i) => (
                 <motion.div
                   key={link.label}
@@ -123,14 +116,16 @@ export default function Header() {
             </nav>
 
             <div className="p-6">
-              <Link
+              <a
                 href={brand.navCtaHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
                 className="flex items-center justify-center gap-2 w-full py-4 rounded-full text-base font-medium text-white bg-gradient-to-r from-violet-primary to-violet-neon"
               >
                 {brand.navCta}
                 <ArrowUpRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}

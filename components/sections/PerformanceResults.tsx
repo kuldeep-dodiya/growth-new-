@@ -50,13 +50,7 @@ export default function PerformanceResults() {
             <AnimatedSection delay={0.2}>
               <p className="text-text-secondary text-lg leading-relaxed mb-6">
                 We measure success in revenue, leads, and growth — not impressions and
-                follower counts. Here's what performance-focused marketing actually looks like.
-              </p>
-            </AnimatedSection>
-            <AnimatedSection delay={0.3}>
-              <p className="text-text-secondary/40 text-xs">
-                * Sample data — replace with real results in{' '}
-                <code className="text-violet-primary/60">data/metrics.ts</code>
+                follower counts. Here&apos;s what performance-focused marketing actually looks like.
               </p>
             </AnimatedSection>
           </div>

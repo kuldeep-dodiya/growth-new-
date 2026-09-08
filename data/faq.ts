@@ -16,7 +16,7 @@ export const faqs: FAQItem[] = [
   {
     question: "What industries do you work with?",
     answer:
-      "We work with coaches and consultants, e-commerce and D2C brands, real estate, healthcare, education, local businesses, and professional services. The common thread: ambitious brands that want measurable growth, not vanity metrics.",
+      "Our Performance Marketing service is purpose-built for D2C and e-commerce brands. Our Website & Conversion service works with D2C, e-commerce, healthcare, and real estate businesses. We focus on these markets intentionally — going deep rather than spreading thin across every industry.",
   },
   {
     question: "What budget do I need to get started?",

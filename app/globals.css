@@ -1,26 +1,184 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ============================================================
+   GROWTH BRIDGE — GLOBAL STYLES & TAILWIND v4 THEME
+   ============================================================ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors */
+  --color-background: #020107;
+  --color-surface: #0C0818;
+  --color-violet-dark: #201639;
+  --color-violet-primary: #8751C1;
+  --color-violet-neon: #A95FEF;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #BDAAD4;
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), 'Courier New', monospace;
+
+  /* Shadows */
+  --shadow-neon: 0 0 20px rgba(169, 95, 239, 0.3), 0 0 40px rgba(135, 81, 193, 0.15);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  /* Background gradients */
+  --bg-glass-gradient: linear-gradient(180deg, rgba(32, 22, 57, 0.4) 0%, rgba(12, 8, 24, 0.8) 100%);
+  --bg-glow-gradient: radial-gradient(circle at center, rgba(169, 95, 239, 0.15) 0%, transparent 70%);
+  --bg-primary-gradient: linear-gradient(90deg, #8751C1 0%, #A95FEF 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ============================================================
+   BASE RESETS
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #020107;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   LENIS SMOOTH SCROLL
+   ============================================================ */
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+/* ============================================================
+   SCROLLBAR STYLING
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C0818;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8751C1;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A95FEF;
+}
+
+/* ============================================================
+   UTILITY CLASSES
+   ============================================================ */
+
+/* Glass gradient background */
+.bg-glass-gradient {
+  background: linear-gradient(180deg, rgba(32, 22, 57, 0.4) 0%, rgba(12, 8, 24, 0.8) 100%);
+}
+
+/* Neon glow shadow */
+.shadow-neon {
+  box-shadow: 0 0 20px rgba(169, 95, 239, 0.3), 0 0 40px rgba(135, 81, 193, 0.15);
+}
+
+/* Primary gradient text */
+.text-gradient {
+  background: linear-gradient(90deg, #8751C1 0%, #A95FEF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================================
+   ANIMATION HELPERS
+   ============================================================ */
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+.animate-glow-pulse {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* ============================================================
+   CUSTOM CURSOR
+   ============================================================ */
+
+/* Hide native cursor on desktop when active */
+body.gb-cursor-active,
+body.gb-cursor-active * {
+  cursor: none !important;
+}
+
+/* Retain native cursor for inputs/text selection */
+body.gb-cursor-active input,
+body.gb-cursor-active textarea,
+body.gb-cursor-active select,
+body.gb-cursor-active [contenteditable="true"] {
+  cursor: text !important;
+}
+
+.gb-cursor-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  /* Will-change used since transform translates via RAF */
+  will-change: transform;
+}
+
+.gb-cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.2s ease;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.gb-cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(135, 81, 193, 0.45);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease, 
+              background-color 0.3s ease;
+}
+
+.gb-cursor-label {
+  display: block;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }

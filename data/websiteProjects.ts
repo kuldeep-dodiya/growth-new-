@@ -17,52 +17,43 @@ export interface WebsiteProject {
 export const websiteProjects: WebsiteProject[] = [
   {
     id: "website-01",
-    name: "[REPLACE: WEBSITE 01 NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    type: "[REPLACE: PROJECT TYPE]", // e.g. "E-commerce Website"
-    objective: "[REPLACE: Objective — e.g. 'Increase online sales and reduce cart abandonment']",
-    screenshot: "/placeholders/website-01.jpg", // [REPLACE: ACTUAL SCREENSHOT PATH]
-    url: undefined, // [REPLACE: LIVE URL if applicable]
-    tags: ["[TAG 1]", "[TAG 2]"],
+    name: "ZaykaQR",
+    industry: "Restaurant Technology",
+    type: "Digital Menu & QR Platform", // e.g. "E-commerce Website"
+    objective: "Create a modern QR-based digital menu experience that helps restaurants replace traditional menus, improve ordering convenience, and create a smoother customer experience.",
+    screenshot: "/website/zayka.png", // [REPLACE: ACTUAL SCREENSHOT PATH]
+    url: "https://www.zaykaqr.space/", // [REPLACE: LIVE URL if applicable]
+     tags: ["QR Menu", "Restaurant Technology", "Digital Experience"],
   },
   {
     id: "website-02",
-    name: "[REPLACE: WEBSITE 02 NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    type: "[REPLACE: PROJECT TYPE]",
-    objective: "[REPLACE: Objective]",
-    screenshot: "/placeholders/website-02.jpg", // [REPLACE: ACTUAL SCREENSHOT PATH]
-    url: undefined,
-    tags: ["[TAG 1]", "[TAG 2]"],
+    name: "Karmava",
+    industry: "Fashion & Clothing",
+    type: "E-commerce Website",
+    objective: "Create a premium, modern online store for a clothing brand with a strong visual identity and a smooth shopping experience.",
+    screenshot: "/website/karmva.png", // [REPLACE: ACTUAL SCREENSHOT PATH]
+    url: "https://karmva-test.vercel.app/",
+     tags: ["Fashion", "E-commerce"],
   },
   {
     id: "website-03",
-    name: "[REPLACE: WEBSITE 03 NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    type: "[REPLACE: PROJECT TYPE]",
-    objective: "[REPLACE: Objective]",
-    screenshot: "/placeholders/website-03.jpg", // [REPLACE: ACTUAL SCREENSHOT PATH]
-    url: undefined,
-    tags: ["[TAG 1]", "[TAG 2]"],
+    name: "Puma Concept",
+    industry: "Sportswear",
+    type: "Concept Website",
+    objective: "Create a bold, high-energy sportswear website concept focused on product presentation, visual impact, and modern interactions.",
+    screenshot: "/website/puma.png", // [REPLACE: ACTUAL SCREENSHOT PATH]
+    url: "https://puma-website-nu.vercel.app/",
+      tags: ["Sportswear", "Concept"],
   },
   {
     id: "website-04",
-    name: "[REPLACE: WEBSITE 04 NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    type: "[REPLACE: PROJECT TYPE]",
-    objective: "[REPLACE: Objective]",
-    screenshot: "/placeholders/website-04.jpg", // [REPLACE: ACTUAL SCREENSHOT PATH]
-    url: undefined,
-    tags: ["[TAG 1]", "[TAG 2]"],
+    name: "Fentastice",
+    industry: "Beverages & FMCG",
+    type: "Brand Website",
+    objective: "Create a vibrant and engaging digital experience for a beverage brand, showcasing its flavored drinks through bold visuals, modern design, and interactive storytelling.",
+    screenshot: "/website/fentastic.png", // [REPLACE: ACTUAL SCREENSHOT PATH]
+   url: "https://fentastic.vercel.app/",
+     tags: ["Beverages", "Brand Website"],
   },
-  {
-    id: "website-05",
-    name: "[REPLACE: WEBSITE 05 NAME]",
-    industry: "[REPLACE: INDUSTRY]",
-    type: "[REPLACE: PROJECT TYPE]",
-    objective: "[REPLACE: Objective]",
-    screenshot: "/placeholders/website-05.jpg", // [REPLACE: ACTUAL SCREENSHOT PATH]
-    url: undefined,
-    tags: ["[TAG 1]", "[TAG 2]"],
-  },
+
 ];

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Play, ChevronDown } from 'lucide-react';
+import MagneticButton from '@/components/MagneticButton';
 import Link from 'next/link';
 import { useImagePreloader } from '@/hooks/useImagePreloader';
 import { brand } from '@/data/brand';
@@ -178,7 +179,7 @@ export default function HeroScroll() {
                 <>
                   Turn Attention Into{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-primary to-violet-neon">
-                    Measurable Growth
+                    Business Growth
                   </span>
                 </>
               )}
@@ -191,20 +192,26 @@ export default function HeroScroll() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-auto">
-              <Link
-                href={brand.navCtaHref}
-                className="flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold text-white bg-gradient-to-r from-violet-primary to-violet-neon hover:shadow-neon transition-all duration-300 hover:scale-105"
-              >
-                {brand.heroCta1}
-                <ArrowUpRight className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#work"
-                className="flex items-center gap-2 px-8 py-4 rounded-full text-base font-medium text-white border border-white/20 hover:border-violet-primary/60 hover:bg-violet-dark/20 transition-all duration-300 backdrop-blur-sm"
-              >
-                <Play className="w-4 h-4 fill-current" />
-                {brand.heroCta2}
-              </Link>
+              <MagneticButton>
+                <a
+                  href={brand.navCtaHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold text-white bg-gradient-to-r from-violet-primary to-violet-neon hover:shadow-neon transition-all duration-300 hover:scale-105"
+                >
+                  {brand.heroCta1}
+                  <ArrowUpRight className="w-5 h-5" />
+                </a>
+              </MagneticButton>
+              <MagneticButton intensity={0.1}>
+                <Link
+                  href="#work"
+                  className="flex items-center gap-2 px-8 py-4 rounded-full text-base font-medium text-white border border-white/20 hover:border-violet-primary/60 hover:bg-violet-dark/20 transition-all duration-300 backdrop-blur-sm"
+                >
+                  <Play className="w-4 h-4 fill-current" />
+                  {brand.heroCta2}
+                </Link>
+              </MagneticButton>
             </div>
           </motion.div>
         </div>

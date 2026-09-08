@@ -40,7 +40,9 @@ export default function WebsiteShowcase() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.7, delay: i * 0.1 }}
-              className="group flex flex-col rounded-3xl overflow-hidden border border-violet-dark/30 hover:border-violet-primary/60 transition-all duration-500 bg-glass-gradient"
+              className="group flex flex-col rounded-3xl overflow-hidden border border-violet-dark/30 hover:border-violet-primary/60 transition-all duration-500 bg-glass-gradient cursor-pointer"
+              data-cursor-card
+              data-cursor-label="VIEW"
             >
               {/* Screenshot area */}
               <div className="relative overflow-hidden" style={{ height: '260px' }}>
@@ -50,6 +52,8 @@ export default function WebsiteShowcase() {
                     backgroundImage: `url(${project.screenshot})`,
                     backgroundColor: '#201639',
                   }}
+                  role="img"
+                  aria-label={`${project.name} — ${project.industry} website project by Growth Bridge`}
                 />
                 {/* Placeholder visual */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-20">
