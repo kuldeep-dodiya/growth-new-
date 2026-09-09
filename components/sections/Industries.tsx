@@ -30,7 +30,7 @@ const groupBadge: Record<string, { icon: React.ReactNode; color: string }> = {
 
 export default function Industries() {
   return (
-    <section className="relative py-24 lg:py-32 px-6 bg-background overflow-hidden">
+    <section className="relative py-16 lg:py-32 px-6 bg-background overflow-hidden">
       {/* Background glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] opacity-10 blur-3xl pointer-events-none"

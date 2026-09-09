@@ -10,7 +10,7 @@ export default function CaseStudies() {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   return (
-    <section id="case-studies" className="relative py-24 lg:py-32 px-6 bg-background overflow-hidden">
+    <section id="case-studies" className="relative py-16 lg:py-32 px-6 bg-background overflow-hidden">
       {/* Glow */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] opacity-10 blur-3xl"
@@ -57,7 +57,7 @@ export default function CaseStudies() {
                   </span>
                   <div>
                     <p className="text-white font-bold text-lg">{cs.client}</p>
-                    <div className="flex items-center gap-2 mt-0.5">
+                    <div className="flex flex-wrap items-center gap-2 mt-0.5">
                       <span className="text-text-secondary text-sm">{cs.industry}</span>
                       <span className="text-text-secondary/40">·</span>
                       <span className="text-text-secondary text-sm">{cs.projectType}</span>

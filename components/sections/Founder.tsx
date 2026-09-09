@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function Founder() {
   return (
-    <section id="founder" className="relative py-24 lg:py-32 px-6 bg-surface overflow-hidden">
+    <section id="founder" className="relative py-16 lg:py-32 px-6 bg-surface overflow-hidden">
       {/* Glow */}
       <div
         className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] opacity-10 blur-3xl pointer-events-none"

@@ -15,7 +15,7 @@ const nodes = [
 
 export default function GrowthSystem() {
   return (
-    <section className="relative py-16 lg:py-24 px-6 bg-background overflow-hidden">
+    <section className="relative py-12 lg:py-24 px-6 bg-background overflow-hidden">
       {/* Glow line */}
       <div
         className="absolute inset-x-0 top-1/2 h-0.5 opacity-20 pointer-events-none"

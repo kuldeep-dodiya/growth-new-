@@ -7,7 +7,7 @@ import { ExternalLink, Monitor } from 'lucide-react';
 
 export default function WebsiteShowcase() {
   return (
-    <section className="relative py-24 lg:py-32 px-6 bg-surface overflow-hidden">
+    <section className="relative py-16 lg:py-32 px-6 bg-surface overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

@@ -18,7 +18,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function Process() {
   return (
-    <section id="process" className="relative py-24 lg:py-32 px-6 bg-surface overflow-hidden">
+    <section id="process" className="relative py-16 lg:py-32 px-6 bg-surface overflow-hidden">
       {/* Center glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] opacity-10 blur-3xl pointer-events-none"

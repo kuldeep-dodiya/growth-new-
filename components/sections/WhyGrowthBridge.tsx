@@ -20,7 +20,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function WhyGrowthBridge() {
   return (
-    <section className="relative py-24 lg:py-32 px-6 bg-background overflow-hidden">
+    <section className="relative py-16 lg:py-32 px-6 bg-background overflow-hidden">
       {/* Glow */}
       <div
         className="absolute top-0 left-0 w-[400px] h-[400px] opacity-10 blur-3xl pointer-events-none"

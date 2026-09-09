@@ -31,7 +31,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-24 lg:py-32 px-6 bg-surface overflow-hidden">
+    <section id="contact" className="relative py-16 lg:py-32 px-6 bg-surface overflow-hidden">
       {/* Glow */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] opacity-10 blur-3xl pointer-events-none"

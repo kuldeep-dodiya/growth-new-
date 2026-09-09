@@ -16,7 +16,7 @@ const flowSteps = [
 
 export default function Introduction() {
   return (
-    <section id="about" className="relative py-24 lg:py-32 px-6 bg-background overflow-hidden">
+    <section id="about" className="relative py-16 lg:py-32 px-6 bg-background overflow-hidden">
       {/* Background glow */}
       <div
         className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] opacity-10 blur-3xl pointer-events-none"

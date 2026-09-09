@@ -11,7 +11,7 @@ export default function CreativeShowcase() {
 
   return (
     <>
-      <section id="work" className="relative py-24 lg:py-32 px-6 bg-background overflow-hidden">
+      <section id="work" className="relative py-16 lg:py-32 px-6 bg-background overflow-hidden">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-4">

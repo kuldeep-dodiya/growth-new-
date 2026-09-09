@@ -7,7 +7,7 @@ import { Quote, User } from 'lucide-react';
 
 export default function Testimonials() {
   return (
-    <section className="relative py-24 lg:py-32 px-6 bg-background overflow-hidden">
+    <section className="relative py-16 lg:py-32 px-6 bg-background overflow-hidden">
       {/* Glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] opacity-10 blur-3xl pointer-events-none"
@@ -37,7 +37,7 @@ export default function Testimonials() {
           <p className="text-center text-text-secondary/40 text-xs tracking-widest uppercase mb-6">
             Trusted By D2C & E-commerce Brands
           </p>
-          <div className="flex items-center justify-center flex-wrap gap-8">
+          <div className="flex items-center justify-center flex-wrap gap-4 md:gap-8">
             {clientLogos.map((logo, i) => (
               <motion.div
                 key={logo.id}

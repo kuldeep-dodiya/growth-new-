@@ -104,7 +104,7 @@ export default function HeroScroll() {
       style={{ height: '500vh' }}
     >
       {/* Sticky viewport */}
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+      <div className="sticky top-0 h-[100dvh] w-full overflow-hidden">
         {/* Canvas layer */}
         <canvas
           ref={canvasRef}

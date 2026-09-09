@@ -13,7 +13,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-24 lg:py-32 px-6 bg-surface overflow-hidden">
+    <section id="services" className="relative py-16 lg:py-32 px-6 bg-surface overflow-hidden">
       {/* Background glow */}
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] opacity-10 blur-3xl pointer-events-none"

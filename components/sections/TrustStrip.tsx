@@ -17,7 +17,7 @@ export default function TrustStrip() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section ref={ref} className="relative py-16 px-6 bg-background">
+    <section ref={ref} className="relative py-16 px-6 bg-background overflow-hidden">
       {/* Glow backdrop */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] opacity-20 blur-3xl pointer-events-none"

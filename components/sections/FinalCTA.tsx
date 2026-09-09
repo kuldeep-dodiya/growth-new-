@@ -9,7 +9,7 @@ import MagneticButton from '@/components/MagneticButton';
 
 export default function FinalCTA() {
   return (
-    <section className="relative py-32 lg:py-48 px-6 overflow-hidden bg-background">
+    <section className="relative py-20 lg:py-48 px-6 overflow-hidden bg-background">
       {/* Radial glow backdrop */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-20 blur-3xl pointer-events-none"
@@ -34,7 +34,7 @@ export default function FinalCTA() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>
-          <h2 className="text-5xl lg:text-7xl font-bold text-white tracking-tight leading-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white tracking-tight leading-tight mb-6">
             Ready to Bridge the Gap Between{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-primary to-violet-neon">
               Traffic and Growth?
