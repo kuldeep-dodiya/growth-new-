@@ -29,7 +29,7 @@ export const brand = {
   navCtaHref: "https://calendly.com/growthbriidge/30min",
 
   // CONTACT
-  email: "growthbriidge@gmail.com", // e.g. hello@growthbridge.in
+  email: "growthbriidge@gmail.com", // e.g. hello@growthbriidge.in
   phone: "+91 93130 70872", // e.g. +91 98765 43210
   location: "Gujarat, India", // e.g. Mumbai, India
 

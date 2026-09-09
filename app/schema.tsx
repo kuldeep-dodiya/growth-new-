@@ -3,8 +3,8 @@ export default function JsonLd() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Growth Bridge',
-    url: 'https://growthbridge.in',
-    logo: 'https://growthbridge.in/gb%20logo/main%20logo.png',
+    url: 'https://www.growthbriidge.in',
+    logo: 'https://www.growthbriidge.in/gb%20logo/main%20logo.png',
     description:
       'Growth Bridge is a performance marketing and conversion design agency. We help D2C and e-commerce brands grow through performance marketing and build high-converting websites for D2C, e-commerce, healthcare, and real estate businesses.',
     email: 'growthbriidge@gmail.com',
@@ -29,7 +29,7 @@ export default function JsonLd() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Growth Bridge',
-    url: 'https://growthbridge.in',
+    url: 'https://www.growthbriidge.in',
     description:
       'Performance marketing agency for D2C and e-commerce brands. Conversion-focused websites for D2C, healthcare, and real estate.',
   };

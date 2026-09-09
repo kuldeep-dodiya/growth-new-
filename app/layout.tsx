@@ -19,7 +19,7 @@ import CustomCursor from "@/components/CustomCursor";
 import JsonLd from './schema';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://growthbridge.in'),
+  metadataBase: new URL('https://www.growthbriidge.in'),
   title: {
     default: 'Growth Bridge — Performance Marketing & Conversion Design Agency',
     template: '%s | Growth Bridge',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: 'Growth Bridge — Performance Marketing & Conversion Design Agency',
     description:
       'Performance marketing for D2C and e-commerce brands. High-converting websites for D2C, healthcare, and real estate. Book a free strategy call.',
-    url: 'https://growthbridge.in',
+    url: 'https://www.growthbriidge.in',
     siteName: 'Growth Bridge',
     type: 'website',
     locale: 'en_IN',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     images: ['/gb logo/main logo.png'],
   },
   alternates: {
-    canonical: 'https://growthbridge.in',
+    canonical: 'https://www.growthbriidge.in',
   },
   icons: {
     icon: '/gb logo/main logo.png',
